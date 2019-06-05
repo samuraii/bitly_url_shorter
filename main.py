@@ -1,7 +1,9 @@
+from dotenv import load_dotenv
 from urllib.parse import urlparse
 import requests
 import os
 
+load_dotenv()
 token = os.getenv("TOKEN")
 
 def get_bitlink(token, url):
