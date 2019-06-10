@@ -6,13 +6,18 @@ Progam allows you short you urls with bittly service.
 
 ## How it works
 
+```bash
+ python main.py https://ya.ru
+ Bitlink for https://ya.ru is http://bit.ly/2wMiBXk
+ ```
+
 ## How to install
 
 1) Create virtual environment with venv module: https://docs.python.org/3/library/venv.html
 
 2) Install requirements 
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
