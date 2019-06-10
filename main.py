@@ -2,6 +2,7 @@ from dotenv import load_dotenv
 from urllib.parse import urlparse
 import requests
 import os
+import argparse
 
 load_dotenv()
 token = os.getenv("TOKEN")
@@ -31,7 +32,11 @@ def is_biltink(token, bitlink):
   return response.ok
 
 if __name__ == '__main__':
-  url = input('Input url to short: ')
+  parser = argparse.ArgumentParser(description='Process some integers.')
+  parser.add_argument('url', help='url to short')
+  args = parser.parse_args()
+  url = args.url
+
   if is_biltink(token, url):
     clicks = get_link_clicks(token, url)
     print(f"Bitlink: {url} was clicked {clicks} times")
