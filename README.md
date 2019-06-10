@@ -15,3 +15,5 @@ Progam allows you short you urls with bittly service.
 ```
 pip install -r requirements.txt
 ```
+
+3) Create .env file and put your bittly TOKEN there. Use https://pypi.org/project/python-dotenv/ for reference.
